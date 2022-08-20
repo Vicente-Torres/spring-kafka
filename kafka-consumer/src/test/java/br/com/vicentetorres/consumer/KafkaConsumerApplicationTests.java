@@ -1,4 +1,4 @@
-package br.com.mobitbrasil.consumer;
+package br.com.vicentetorres.consumer;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

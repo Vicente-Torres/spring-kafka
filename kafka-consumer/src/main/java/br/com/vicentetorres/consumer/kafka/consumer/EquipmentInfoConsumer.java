@@ -1,6 +1,6 @@
-package br.com.mobitbrasil.consumer.kafka.consumer;
+package br.com.vicentetorres.consumer.kafka.consumer;
 
-import br.com.mobitbrasil.consumer.model.EquipmentInfo;
+import br.com.vicentetorres.consumer.model.EquipmentInfo;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.springframework.beans.factory.annotation.Value;

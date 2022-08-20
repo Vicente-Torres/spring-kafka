@@ -1,4 +1,4 @@
-package br.com.mobitbrasil.consumer.model;
+package br.com.vicentetorres.consumer.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.*;

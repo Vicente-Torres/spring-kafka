@@ -1,6 +1,6 @@
-package br.com.mobitbrasil.consumer.kafka;
+package br.com.vicentetorres.consumer.kafka;
 
-import br.com.mobitbrasil.consumer.model.EquipmentInfo;
+import br.com.vicentetorres.consumer.model.EquipmentInfo;
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.common.serialization.StringDeserializer;
 import org.springframework.beans.factory.annotation.Value;
