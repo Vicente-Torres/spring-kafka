@@ -1,19 +1,18 @@
 package br.com.mobitbrasil.consumer.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.*;
 import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.math.BigDecimal;
 import java.time.Instant;
 
-@Document
 @ToString
+@EqualsAndHashCode(onlyExplicitlyIncluded = true)
 public class EquipmentInfo {
 
     @Id
+    @EqualsAndHashCode.Include
     private Long id;
 
     @JsonProperty("codigoEquipamento")
@@ -25,10 +24,16 @@ public class EquipmentInfo {
     @JsonProperty("usoRAM")
     private BigDecimal usedRamPercentage;
 
+    @Getter
     @JsonProperty("dataLeitura")
     private Instant readDate;
 
+    @Getter
     @Setter
     @JsonProperty(access = JsonProperty.Access.READ_ONLY)
     private Instant persistDate;
+
+    @Setter
+    @JsonProperty(access = JsonProperty.Access.READ_ONLY)
+    private Long latency;
 }

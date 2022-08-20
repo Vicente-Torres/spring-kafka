@@ -97,7 +97,7 @@ services:
       - kafka-3
     environment:
       TOPIC_NAME: "exemplo"
-      CONSUMER_GROUP_ID: "consumerGroup1"
+      CONSUMER_GROUP: "consumerGroup1"
       CONTAINER_NAME: "spring-consumer-1"
       APP_PORT: 8081
     extra_hosts:
@@ -112,8 +112,10 @@ services:
       - kafka-2
       - kafka-3
     environment:
-      CONTAINER_NAME: "spring-consumer-2"
-      APP_PORT: 8082
+        TOPIC_NAME: "exemplo"
+        CONSUMER_GROUP: "consumerGroup1"
+        CONTAINER_NAME: "spring-consumer-2"
+        APP_PORT: 8082
     extra_hosts:
       - "moby:127.0.0.1"
 
@@ -127,7 +129,7 @@ services:
       - kafka-3
     environment:
       TOPIC_NAME: "exemplo"
-      CONSUMER_GROUP_ID: "consumerGroup1"
+      CONSUMER_GROUP: "consumerGroup1"
       CONTAINER_NAME: "spring-consumer-3"
       APP_PORT: 8083
     extra_hosts:
@@ -143,7 +145,7 @@ services:
       - kafka-3
     environment:
       TOPIC_NAME: "exemplo"
-      CONSUMER_GROUP_ID: "consumerGroup1"
+      CONSUMER_GROUP: "consumerGroup1"
       CONTAINER_NAME: "spring-consumer-4"
       APP_PORT: 8084
     extra_hosts:
