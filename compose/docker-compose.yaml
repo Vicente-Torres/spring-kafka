@@ -89,7 +89,7 @@ services:
 
   spring-consumer-1:
     container_name: "spring-consumer-1"
-    image: springio/exemplo-consumer
+    image: springio/spring-consumer
     network_mode: host
     depends_on:
       - kafka-1
@@ -105,7 +105,7 @@ services:
 
   spring-consumer-2:
     container_name: "spring-consumer-2"
-    image: springio/exemplo-consumer
+    image: springio/spring-consumer
     network_mode: host
     depends_on:
       - kafka-1
@@ -121,7 +121,7 @@ services:
 
   spring-consumer-3:
     container_name: "spring-consumer-3"
-    image: springio/exemplo-consumer
+    image: springio/spring-consumer
     network_mode: host
     depends_on:
       - kafka-1
@@ -137,7 +137,7 @@ services:
 
   spring-consumer-4:
     container_name: "spring-consumer-4"
-    image: springio/exemplo-consumer
+    image: springio/spring-consumer
     network_mode: host
     depends_on:
       - kafka-1
