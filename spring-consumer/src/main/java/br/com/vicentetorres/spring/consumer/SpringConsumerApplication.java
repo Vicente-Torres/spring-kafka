@@ -1,13 +1,13 @@
-package br.com.vicentetorres.consumer;
+package br.com.vicentetorres.spring.consumer;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class KafkaConsumerApplication {
+public class SpringConsumerApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(KafkaConsumerApplication.class, args);
+		SpringApplication.run(SpringConsumerApplication.class, args);
 	}
 
 }

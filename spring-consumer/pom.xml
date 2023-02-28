@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>br.com.mobitbrasil</groupId>
-	<artifactId>kafka-consumer</artifactId>
+	<artifactId>spring-consumer</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>kafka-consumer</name>
 	<description>kafka-consumer</description>

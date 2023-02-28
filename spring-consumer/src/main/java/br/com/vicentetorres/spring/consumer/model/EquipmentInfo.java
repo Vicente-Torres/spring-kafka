@@ -1,4 +1,4 @@
-package br.com.vicentetorres.consumer.model;
+package br.com.vicentetorres.spring.consumer.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.*;

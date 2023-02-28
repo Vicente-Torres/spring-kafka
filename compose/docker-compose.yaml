@@ -158,4 +158,3 @@ services:
     environment:
       KMAGIC_ALLOW_TOPIC_DELETE: "true"
       KMAGIC_ALLOW_SCHEMA_DELETE: "true"
-

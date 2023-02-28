@@ -1,6 +1,6 @@
-package br.com.vicentetorres.consumer.kafka.consumer;
+package br.com.vicentetorres.spring.consumer.kafka.consumer;
 
-import br.com.vicentetorres.consumer.model.EquipmentInfo;
+import br.com.vicentetorres.spring.consumer.model.EquipmentInfo;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.springframework.beans.factory.annotation.Value;
@@ -22,7 +22,7 @@ public class EquipmentInfoConsumer {
         var equipmentInfo = record.value();
         equipmentInfo.setPersistDate(Instant.now());
         equipmentInfo.setLatency(Duration.between(equipmentInfo.getReadDate(), equipmentInfo.getPersistDate()).toMillis());
-        log.info("Nova menssagem [{}] {}", containerName, record.value());
+        log.info("Nova menssagem: [{}] {}", containerName, record.value());
     }
 
 }
