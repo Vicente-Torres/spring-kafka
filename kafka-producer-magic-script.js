@@ -15,7 +15,7 @@ Magic.reportProgress('Done: ' + new Date());
 return messages;
 
 */
-var topic = Magic.getTopic("kafka", "exemplo");
+var topic = Magic.getTopic("kafka", "example");
 var qtd = 10;
 var count = 0;
 var equipmentInfo = {}
